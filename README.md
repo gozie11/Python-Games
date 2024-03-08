@@ -11,4 +11,4 @@ A few games built using python
 ## Tetris
 
 
-Credit to [Free Code Camp]([url](https://www.youtube.com/watch?v=XGf2GcyHPhc&ab_channel=freeCodeCamp.org)https://www.youtube.com/watch?v=XGf2GcyHPhc&ab_channel=freeCodeCamp.org) for the ideas.
+Credit to [Free Code Camp]((https://www.youtube.com/watch?v=XGf2GcyHPhc&ab_channel=freeCodeCamp.org)https://www.youtube.com/watch?v=XGf2GcyHPhc&ab_channel=freeCodeCamp.org) for the ideas.
