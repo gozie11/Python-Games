@@ -14,4 +14,4 @@ class snake(object):
         pass
 def drawGrid(w, rows, surface):
     pass
-def redrawWindow(surface):d
+def redrawWindow(surface):
