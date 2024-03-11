@@ -33,7 +33,51 @@ class snake(object):
 
     def draw(self, surface) -> None:
         pass
+
 def drawGrid(w, rows, surface):
-    pass
+    sizeBtwn = w // rows
+
+    x = 0
+    y = 0
+    for l in range(rows):
+        x = x + sizeBtwn
+        y = y + sizeBtwn
+
+        pygame.draw.line(surface, (255,255,255), (x,0), (x,w))
+        pygame.draw.line(surface, (255,255,255), (0,y), (w,y))
+
+
 def redrawWindow(surface):
+    global rows, width
+    surface.fill((0,0,0))
+    drawGrid(width, rows, surface)
+    pygame.display.update()
+
+def randomSnack(rows, items):
+    pass    
+
+def message_box(subject, content):
     pass
+
+def main():
+    global width, rows
+    width = 500
+    height = 500
+    rows = 20 # this should be 500 divisible. Make it smaller to make the game harder
+    win = pygame.display.set_mode((width, height))
+
+    s = snake((255,0,0), (10,10))
+    flag = True
+
+    # COOL STUFF
+    #this makes sure our game runs at 10 frames per second
+    clock = pygame.time.Clock()
+
+    while flag:
+        pygame.time.delay(50)# lower this for a faster game
+        clock.tick(10) # lower this for a slower game
+        redrawWindow(win)
+
+# I guess the next line is the most important line in the code because it starts the game
+        
+main()
