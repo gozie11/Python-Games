@@ -192,9 +192,10 @@ def main():
             snack = cube(randomSnack (rows, s), color=(0, 255, 0))
 
         for x in range (len(s.body)):
-            if s.body[x].pos in list(map(lambda z:z.pos, s.body[x+1:])):
+            if s.body[x].pos in list(map(lambda z:z.pos, s.body[x+1:])) :
                 print('Score: ', len(s.body))
-                message_box('You Lost!', 'Play again...')
+                message_box(f'      GAME OVER !', 
+                            f' Scored {len(s.body)} points :) \n Play again')
                 s.reset((10,10))
                 break
 
