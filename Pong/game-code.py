@@ -41,8 +41,8 @@ ball.penup()
 ball.goto(0, 0)
 
 # Guide has speed set to 2, I found that .15 works smoothly
-ball.dx = 0.15
-ball.dy = 0.15
+ball.dx = 0.2
+ball.dy = 0.2
 
 # Pen
 pen = turtle.Turtle()
